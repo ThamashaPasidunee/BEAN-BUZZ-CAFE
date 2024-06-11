@@ -1,0 +1,344 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background color for the whole website */
+    color: #333; /* General text color */
+}
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Background color for the header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: #34495e; /* Background color for the navigation bar */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2c3e50; /* Change background color on hover */
+    border-bottom: 2px solid #fff; /* Add bottom border when hovered */
+}
+
+nav ul li a.selected {
+    border-bottom: 2px solid #fff; /* Add bottom border to selected item */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Centering and Styling Home Section */
+#home {
+    text-align: center; /* Center align text within the section */
+}
+
+.section-heading {
+    color: #2c3e50; /* Dark blue color for section heading */
+    font-size: 36px; /* Increased font size for section heading */
+    margin-bottom: 10px; /* Reduced margin for tighter spacing */
+}
+
+.section-text {
+    color: #777; /* Dark gray color for section text */
+    font-size: 18px; /* Increased font size for section text */
+}
+
+/* Styling Menu Section */
+#menu {
+    padding: 20px; /* Padding for the menu section */
+}
+
+.menu-heading {
+    color: #2c3e50; /* Dark blue color for section heading */
+    font-size: 28px; /* Font size for section heading */
+    margin-bottom: 15px; /* Margin below heading */
+    border-bottom: 2px solid #2c3e50; /* Border below heading */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu-subtext {
+    color: #777; /* Dark gray color for section text */
+    font-size: 18px; /* Font size for section text */
+    margin-bottom: 20px; /* Margin below subtext */
+}
+
+.menu-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    font-size: 20px; /* Font size for menu items */
+    padding: 10px; /* Padding around menu items */
+    border-bottom: 1px solid #ddd; /* Border below each menu item */
+}
+
+.menu-list li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+/* Menu Table Styles */
+.menu-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px 0; /* Margin for spacing */
+    font-size: 18px; /* Font size */
+}
+
+.menu-table th, .menu-table td {
+    padding: 15px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.menu-table th {
+    background-color: #34495e; /* Background color for header */
+    color: #ffffff; /* Text color for header */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+.menu-table tbody tr:nth-child(even) {
+    background-color: #e0edfe; /* Even row background color */
+}
+
+.menu-table td {
+    border-bottom: 1px solid #ddd; /* Border for table cells */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14px; /* Smaller font size for footer text */
+}
+
+/* Image Container Styles */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align images */
+    margin-bottom: 20px;
+}
+
+.img-container img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Animation */
+#specials-list {
+    animation: slide 3s infinite alternate;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 20px;
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* About Us Section Styles */
+#about {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+#about .section-heading {
+    color: #2c3e50; /* Dark blue color for section heading */
+    font-size: 36px; /* Increased font size for section heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align heading */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+    font-weight: bold; /* Bold text */
+}
+
+#about .section-text {
+    color: #555; /* Dark gray color for section text */
+    font-size: 18px; /* Font size for section text */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below each paragraph */
+    text-align: center; /* Justify text for a clean look */
+}
+
+/* Responsive Design for About Us Section */
+@media only screen and (max-width: 768px) {
+    #about {
+        padding: 20px 10px;
+    }
+
+    #about .section-heading {
+        font-size: 28px; /* Smaller heading font size on mobile */
+    }
+
+    #about .section-text {
+        font-size: 16px; /* Smaller text font size on mobile */
+    }
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+#contact .section-heading {
+    color: #2c3e50; /* Dark blue color for section heading */
+    font-size: 36px; /* Increased font size for section heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align heading */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+    font-weight: bold; /* Bold text */
+}
+
+#contact .section-text {
+    color: #555; /* Dark gray color for section text */
+    font-size: 18px; /* Font size for section text */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the text */
+    text-align: center; /* Center align text */
+}
+
+#contact .contact-info {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-align: center; /* Center align list */
+}
+
+#contact .contact-info li {
+    color: #333; /* Darker gray color for contact info */
+    font-size: 18px; /* Font size for contact info */
+    margin-bottom: 10px; /* Space between items */
+}
+
+/* Responsive Design for Contact Section */
+@media only screen and (max-width: 768px) {
+    #contact {
+        padding: 20px 10px;
+    }
+
+    #contact .section-heading {
+        font-size: 28px; /* Smaller heading font size on mobile */
+    }
+
+    #contact .section-text, #contact .contact-info li {
+        font-size: 16px; /* Smaller text font size on mobile */
+    }
+}
+
+/* Specials Section Styles */
+#specials {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+#specials .section-heading {
+    color: #2c3e50; /* Dark blue color for section heading */
+    font-size: 36px; /* Increased font size for section heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align heading */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Spacing between letters */
+    font-weight: bold; /* Bold text */
+}
+
+#specials .section-text {
+    color: #555; /* Dark gray color for section text */
+    font-size: 18px; /* Font size for section text */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the text */
+    text-align: center; /* Center align text */
+}
+
+#specials .specials-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+#specials .specials-list li {
+    color: #333; /* Darker gray color for specials */
+    font-size: 18px; /* Font size for specials */
+    margin-bottom: 10px; /* Space between items */
+    text-align: center; /* Center align specials */
+}
+
+/* Responsive Design for Specials Section */
+@media only screen and (max-width: 768px) {
+    #specials {
+        padding: 20px 10px;
+    }
+
+    #specials .section-heading {
+        font-size: 28px; /* Smaller heading font size on mobile */
+    }
+
+    #specials .section-text, #specials .specials-list li {
+        font-size: 16px; /* Smaller text font size on mobile */
+    }
+}
+
+
